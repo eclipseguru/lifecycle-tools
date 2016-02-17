@@ -1,0 +1,8 @@
+This directory contains the source for the lifecycle top-level project charter
+in AsciiDoc format, the build script, and generated output.
+
+Note that the build script is configured to generate output for a specific version
+of the document and running the build may overwrite an existing document.
+
+The output files (*.html) may be live documents that may be included by the
+other documents found in the repository, so take care with what you commit.
