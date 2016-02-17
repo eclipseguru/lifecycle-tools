@@ -1,85 +1,45 @@
 = Lifecycle Tools Project Charter
 
-''This charter was developed in accordance with the [https://www.eclipse.org/projects/dev_process/development_process.php Eclipse Development Process] and outlines the mission, scope, organization, and development process for the '''Lifecycle Tools''' Project (Lifecycle). This document extends the [https://www.eclipse.org/projects/dev_process/Eclipse_Standard_TopLevel_Charter_v1.1.php Eclipse Standard Top-Level Charter v1.1], and includes the required content and overrides which follow. It is anticipated that as the standard charter is updated, this charter will incorporate the changes and make adjustments as seen fit by the PMC, and with approval from the EMO and board of directors.''
-
 
 == Overview
 
-Since the creation of the Eclipse Mylyn Project, interest in and use of Eclipse technologies in application lifecycle management (ALM) scenarios has been steadily increasing. Initially, the focus of these development efforts was to provide an extensible, standards-based platform to address a broad range of needs of accessing task and application lifecycle management tools and services using the Eclipse platform. The community has steadily found new and innovative uses and projects which also extend tools and services outside of the Eclipse platform.
+This charter was developed in accordance with the link:https://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Development Process] and outlines the mission, scope, organization, and development process for the *Lifecycle Tools Project*. This document extends the link:https://www.eclipse.org/projects/dev_process/Eclipse_Standard_TopLevel_Charter_v1.2.php[Eclipse Standard Top-Level Charter v1.2], and includes the required content and overrides which follow. It is anticipated that as the standard charter is updated, this charter will incorporate the changes and make adjustments as seen fit by the PMC, and with approval from the EMO and board of directors.
 
-The '''Lifecycle Tools''' Top-Level Project is an open source collaborative software development project dedicated to supporting and enhancing these efforts and providing a home and collaboration environment at Eclipse.
-
-This document describes the composition and organization of the project, roles and responsibilities of the participants, and development process for the project.
-
-* Descriptive name: '''Lifecycle Tools'''
-* Nickname: '''Lifecycle'''
+* Descriptive name: *Lifecycle Tools*
+* Nickname: *Lifecycle*
 
 
 == Mission
 
 The mission of the Lifecycle Tools project is to provide a home and collaboration environment for:
-# Frameworks, APIs and tools for Eclipse-based task and Application Lifecycle Management (ALM)
-# Frameworks, APIs and tools for Eclipse-based Source Code Management integrations (SCM)
-# Exemplary tools for [http://en.wikipedia.org/wiki/Task-focused_interface task-focused programming] within the Eclipse IDE.
-# Reference implementations for open source ALM tools used by the Eclipse community and for open ALM standards such as [http://open-services.net OSLC]
+
+. Frameworks, APIs and tools for Eclipse-based task and Application Lifecycle Management (ALM)
+. Frameworks, APIs and tools for Eclipse-based Source Code Management integrations (SCM)
+. Exemplary tools for [http://en.wikipedia.org/wiki/Task-focused_interface task-focused programming] within the Eclipse IDE.
+. Reference implementations for open source ALM tools used by the Eclipse community and for open ALM standards such as [http://open-services.net OSLC]
 
 This document describes the composition and organization of the project, roles and responsibilities of the participants, and development process for the project.
+
 
 == Scope
 
 The Lifecycle Tools Top-Level Project is a home for Eclipse projects focusing on the needs of application lifecycle management. The range of projects include tools for accessing task, build information and source code from within the Eclipse IDE as well as non Eclipse specific tools for addressing topics such as build and deployment automation, release engineering and application documentation.
 
+* A task management tool for developers
+* The revolutionary task-focused interface
+* A broad ecosystem of Agile and ALM integrations
 
-* '''A task management tool for developers'''
-* '''The revolutionary task-focused interface'''
-* '''A broad ecosystem of Agile and ALM integrations'''
 
-==== Framework Projects
-
-The project will initially be structured into the following sub-projects, each representing an ALM category and providing common APIs for specific ALM tools.  The primary consumers of this project are ALM ISVs and other adopters of Eclipse ALM frameworks.
-
-* '''Tasks''' - Integration with Agile, issue, bug and defect tracking servers. The project provides rich task editing, task list management and offline synchronization for ALM servers. Central portion of the ALM integration framework used by other projects, eg, task-based changed tracking for the SCM project.
-* '''Contexts''' - Usage monitoring, degree-of-interested modeling and the task-focused user extensions implementation for the Eclipse UI, which re-aligns the user experience around tasks and provides features such as workspace focusing and one-click multitasking.
-* '''Versions''' - Eclipse integration for source code and configuration management tools(SCM, SCCM) and bi-directional linking to change management tools. This project and APIs it provides builds on the existing Eclipse "Team" APIs.
-* '''Builds''' - Integration of continuous integration and build systems and seamless access to software build and assembly technologies. Mylyn users will be able to access continuous integration processes, control build execution and associate build results with tasks and context.
-* '''Reviews''' - Eclipse-based code review functionality that's seamlessly integrated with the Tasks and SCM systems supported by Mylyn. Eclipse integration for Agile code reviews, the formal IEEE code review process, review reports with BIRT and aim to support many Eclipse artifact for reviews, e.g. JDT (Java files), CDT (C/C++ files), EMF (models).
-* '''Docs''' - The scope of this project is Eclipse-based access to documentation systems such as Wikis and other portals. This builds on the Mylyn WikiText framework.
-* '''Commons''' - The scope of this project is to provide a framework of common UI, web service, REST and test utilities to be used by the rest of Mylyn and by other Eclipse-based tools (see [[Mylyn_Integrator_Reference#Commons_API]]).
-* '''Incubator''' - New development in areas that are relevant to the other sub-projects.
-
-==== Tool Projects
-
-The primary consumers of the tool projects are developers using Eclipse and wanting integration with their application lifecycle tools.  Each of these projects fits under a framework sub-project, but typically will its own branding and user community, which builds on the community defined by the corresponding ALM or application development tool.  While the number of tool projects will grow, the goal is only to provide reference implementations, and not the comprehensive set of open source and commercial integrations provided by the [[Mylyn/Extensions]] ecosystem.
-
-* Tasks
-** '''Bugzilla Connector''': Mozilla Bugzilla bug tracker integratoin
-** '''Trac Connector''': Trac ticket tracker integration
-* Context
-** '''Java Bridge''': Context management for Java development with JDT
-** '''C/C++ Bridge''': Context management for C/C++ development with CDT
-* Versions
-** '''EGit''': the new top-level project is proposed as a new home for EGit/JGit
-** '''CVS Connector''': Task-based change set management for CVS, depends on team.cvs
-* Builds
-** '''Hudson Connector''': Continuous integration access for Hudson
-* Reviews
-** '''R4E''': The reviews tool leverages the above integrations, and does not require a separate server integration, just a compatible Tasks and SCM integration
-** '''Task-based Reviews''': Lightweight code reviews shared through task repositories
-** '''Gerrit Connector''': Gerrit code review integration for Git repositories
-* Docs
-** '''WikiText''': Wiki-based markup editing for popular dialects
-** '''RichText''': HTML/XHTML/RTF markup editing
-
-==== Incubator Projects
-
-The Mylyn Incubator will focus on new development in areas that are relevant to the other Mylyn Project sub-projects, which because of their nature would not be appropriate for direct inclusion in the effected sub-project. This could be because the work is still experimental, will have a longer timeline than can be contained within a single release, has dependencies on external IP that has not yet cleared the Eclipse Foundation IP process, or is simply potentially too destabilizing in nature.
-
-* '''Incubator''': Trac Wiki Integration, UI Experiments, UI Usage Reporting
-** '''Web Templates Connector'''
-** '''WikiText Sandbox'''
-
-= Project Management Committee Participation
+== Project Management Committee Participation
 
 Each project
+
+
+== Licensing
+
+Projects under the Lifecycle Tools Top-Level Project are permitted to use one of the following two options:
+
+* Eclipse Public License v1.0
+* Eclipse Public License v1.0 and Eclipse Distribution License v1.0
 
 

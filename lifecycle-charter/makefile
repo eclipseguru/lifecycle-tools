@@ -1,7 +1,7 @@
-all : \
+.PHONY: lifecycle_charter_v1.html
+
+all: \
 	lifecycle_charter_v1.html
 
-.PHONY : all
-
-lifecycle_charter_v1.html : lifecycle_charter.adoc
-	asciidoctor -a version=v1,stylesheet=charter.css -b html5 -d book -o lifecycle_charter_v1.html lifecycle_charter.adoc
+lifecycle_charter_v1.html: lifecycle_charter.adoc
+	asciidoctor -a version=v1,hide-uri-scheme -b html5 -d book -o lifecycle_charter_v1.html lifecycle_charter.adoc
