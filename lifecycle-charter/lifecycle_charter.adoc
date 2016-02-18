@@ -13,7 +13,7 @@ This charter was developed in accordance with the link:https://www.eclipse.org/p
 
 The mission of the Lifecycle Tools project is to provide a home and collaboration environment for:
 
-. Open source technology for managing the application lifecycle (eg., Source Code Management, Continuous Integration, Build Technology)
+. Open source  tools and technology for managing the application lifecycle (eg., Source Code Management, Continuous Integration, Build Technology)
 . Reference implementations of ALM standards and protocols used in ALM systems
 . Integrations of exising ALM tools with the Eclipse IDE
 
@@ -35,6 +35,6 @@ Projects under the Lifecycle Tools Top-Level Project are permitted to use one of
 
 == Project Management Committee Participation
 
-Each project is expected to nominate a representative to the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
+Each project is must provide a representative to join the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
 
 
