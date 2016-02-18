@@ -13,8 +13,9 @@ This charter was developed in accordance with the link:https://www.eclipse.org/p
 
 The mission of the Lifecycle Tools project is to provide a home and collaboration environment for:
 
-. Open source technology for managing the application lifecycle (eg., Source Code Management, Continuouse Integration, Build Technology)
-. Integration of exising ALM tools with the Eclipse IDE
+. Open source technology for managing the application lifecycle (eg., Source Code Management, Continuous Integration, Build Technology)
+. Reference implementations of ALM standards and protocols used in ALM systems
+. Integrations of exising ALM tools with the Eclipse IDE
 
 This document describes the composition and organization of the project, roles and responsibilities of the participants, and development process for the project.
 
@@ -23,15 +24,6 @@ This document describes the composition and organization of the project, roles a
 
 The Lifecycle Tools Top-Level Project is a home for Eclipse projects focusing on the needs of application lifecycle management. The range of projects include tools for accessing task, build information and source code from within the Eclipse IDE as well as non Eclipse specific tools for addressing topics such as build and deployment automation, release engineering and application documentation.
 
-* A task management tool for developers
-* The revolutionary task-focused interface
-* A broad ecosystem of Agile and ALM integrations
-
-
-== Project Management Committee Participation
-
-Each project is expected to nominate a representative to the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
-
 
 == Licensing
 
@@ -39,5 +31,10 @@ Projects under the Lifecycle Tools Top-Level Project are permitted to use one of
 
 * Eclipse Public License v1.0
 * Eclipse Public License v1.0 and Eclipse Distribution License v1.0
+
+
+== Project Management Committee Participation
+
+Each project is expected to nominate a representative to the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
 
 
