@@ -1,5 +1,6 @@
 = Lifecycle Tools Project Charter
-
+Lifecycle Tools PMC
+{version}
 
 == Overview
 
@@ -35,6 +36,5 @@ Projects under the Lifecycle Tools Top-Level Project are permitted to use one of
 
 == Project Management Committee Participation
 
-Each project is must provide a representative to join the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
-
+The Projects under this Charter are managed by a group known as the Project Management Committee (the “PMC”). Each project must provide a representative to join the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
 
