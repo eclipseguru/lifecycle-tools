@@ -23,7 +23,7 @@ This document describes the composition and organization of the project, roles a
 
 == Scope
 
-The Lifecycle Tools Top-Level Project is a home for Eclipse projects focusing on the needs of application lifecycle management. The range of projects include tools for accessing task, build information and source code from within the Eclipse IDE as well as non Eclipse specific tools for addressing topics such as build and deployment automation, release engineering and application documentation.
+The Lifecycle Tools Top-Level Project is a home for Eclipse projects focusing on the needs of application lifecycle management. The range of projects include tools for accessing task, build information and source code from within the Eclipse IDE as well as non Eclipse specific tools for addressing topics such as build and deployment automation, release engineering, source code management and application documentation.
 
 
 == Licensing
