@@ -26,14 +26,6 @@ This document describes the composition and organization of the project, roles a
 The Lifecycle Tools Top-Level Project is a home for Eclipse projects focusing on the needs of application lifecycle management. The range of projects include tools for accessing task, build information and source code from within the Eclipse IDE as well as non Eclipse specific tools for addressing topics such as build and deployment automation, release engineering, source code management and application documentation.
 
 
-== Licensing
-
-Projects under the Lifecycle Tools Top-Level Project are permitted to use one of the following two options:
-
-* Eclipse Public License v1.0
-* Eclipse Public License v1.0 and Eclipse Distribution License v1.0
-
-
 == Project Management Committee Participation
 
 The Projects under this Charter are managed by a group known as the Project Management Committee (the “PMC”). Each project must provide a representative to join the Lifecycle Tools PMC. Representatives shall participate in all regular PMC activities.
